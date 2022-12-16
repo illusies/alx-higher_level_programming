@@ -1,0 +1,3 @@
+#!/bin/bash
+#A Bash script that sends a request to the URL...
+curl -sI "$1" | grep -i Content-Length | cut -d " " -f2
